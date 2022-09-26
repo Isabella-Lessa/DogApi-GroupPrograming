@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
 import axios from "axios";
-import {Container} from './style';
+import * as S from './style'
 
 export default function Home() {
 
@@ -18,10 +18,10 @@ export default function Home() {
     }, [])
 
     return(
-        <Container>
-            <div>
-                <img src={dog} alt={`dog random`}/>
-            </div>
-        </Container>
+        <S.Container>
+            <S.CardDog>
+                <S.BoxImg src={dog} alt={`dog random`}/>
+            </S.CardDog>
+        </S.Container>
     )
 }
