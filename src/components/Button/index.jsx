@@ -4,7 +4,7 @@ export default function Button() {
 
     return (
         <>
-            <button onClick={() => { getDogs() }}>Adote um doguinho!</button>
+            <button onClick={() => { getDogs() }}>Adote um doguinho</button>
         </>
     )
 }
